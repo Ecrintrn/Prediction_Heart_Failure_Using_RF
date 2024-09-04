@@ -66,23 +66,24 @@ To analyze correlations between numerical columns we create a function called co
 
 ## Missing Value
 We check the data to designate the missing values in it, dataframe.isnull().sum():
-age                         0
-anaemia                     0
-creatinine_phosphokinase    0
-diabetes                    0
-ejection_fraction           0
-high_blood_pressure         0
-platelets                   0
-serum_creatinine            0
-serum_sodium                0
-sex                         0
-smoking                     0
-time                        0
-DEATH_EVENT                 0
+* age                         0
+* anaemia                     0
+* creatinine_phosphokinase    0
+* diabetes                    0
+* ejection_fraction           0
+* high_blood_pressure         0
+* platelets                   0
+* serum_creatinine            0
+* serum_sodium                0
+* sex                         0
+* smoking                     0
+* time                        0
+* DEATH_EVENT                 0
 dtype: int64
 
 ## Random Forest
 We create our model and see the results:
+
 #################### Accuracy & Results ####################
 
 Accuracy Train :  1.000
@@ -111,6 +112,7 @@ Cross Validation (roc_auc) 0.850
 
 ## Model Tuning
 After creating our model, we proceed to fine-tune it and evaluate the results:
+
 #################### Accuracy & Results ####################
 
 Accuracy Train :  0.962
@@ -152,6 +154,7 @@ x = X.sample(1).values.tolist()
 model_disc.predict(pd.DataFrame(X))[0]
 ```
 result = 1
+
 ---
 ```
 sample2 = [50, 1, 900, 0, 20, 0, 327000.0000, 1.9000, 140, 0, 1, 5]
