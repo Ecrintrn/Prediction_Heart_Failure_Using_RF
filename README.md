@@ -58,10 +58,12 @@ num_cols= [col for col in datraframe.columns if datraframe[col].dtypes in ["uint
 num_cols = [col for col in num_cols if col not in cat_cols]
 ```
 We create another plot function called plot_num_summary(dataframe) to see the whole summary of numerical columns due to the high quantity of them:
+
 ![plot_num](https://github.com/user-attachments/assets/049d2bb2-a302-47bf-af62-2d17fb3fd716)
 
 ## Correlation analysis
 To analyze correlations between numerical columns we create a function called correlated_cols(dataframe):
+
 ![Correlation analysis](https://github.com/user-attachments/assets/ed069d22-ec18-4a3c-9135-20a25cc2f8cb)
 
 ## Missing Value
