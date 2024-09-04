@@ -162,4 +162,4 @@ result = 1
 sample2 = [50, 1, 900, 0, 20, 0, 327000.0000, 1.9000, 140, 0, 1, 5]
 model_disc.predict(pd.DataFrame(sample2).T)[0]
 ```
-result=1
+result = 1
